@@ -12,7 +12,7 @@
 main{width:min(920px,100%);margin:auto;padding:36px 20px 24px}.top{display:flex;align-items:center;gap:14px;margin-bottom:34px}.logo{width:62px;height:62px;border-radius:20px;background:linear-gradient(145deg,#e9c8ff,#ffcae8);display:grid;place-items:center;box-shadow:0 8px 20px #a36bc52a;border:2px solid white;flex-shrink:0}.logo svg{width:45px;height:45px}.brand{font-size:1.3rem;font-weight:900;letter-spacing:-.04em}.brand small{display:block;font-size:.8rem;letter-spacing:.02em;color:var(--muted);font-weight:700;margin-top:2px}
 .hero{text-align:center;padding:30px 18px 28px}.pill{display:inline-block;background:#f0e3ff;border:1px solid #e4d1ff;color:#7040ad;border-radius:999px;padding:7px 13px;font-size:.85rem;font-weight:800}.hero h1{font-size:clamp(2rem,6vw,3.4rem);line-height:1.08;letter-spacing:-.055em;margin:18px 0 12px}.hero h1 span{color:#b34fa8}.hero p{max-width:610px;margin:0 auto;color:var(--muted);font-size:1.06rem;line-height:1.7}
 .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:18px 0}.card{background:#ffffffd9;border:1px solid var(--line);border-radius:24px;padding:23px;box-shadow:0 10px 30px #6c3f8b0a}.card h2{font-size:1.1rem;margin:0 0 9px}.card p{color:var(--muted);line-height:1.65;margin:0}.symbol{font-size:1.7rem;margin-bottom:12px}.chat-card{grid-column:1/-1;background:linear-gradient(135deg,#fffaff,#fff0f8);border-color:#e4c9fa;padding:28px}.chat-head{display:flex;align-items:center;gap:12px;margin-bottom:12px}.chat-head .symbol{margin:0}.chat-head h2{margin:0;font-size:1.35rem}.status{font-size:.82rem;color:#4f8a68;font-weight:800;margin-top:4px}.chat-card p{max-width:690px}.hint{margin-top:18px;padding:13px 15px;background:#f6edff;border-radius:15px;color:#69458d;font-size:.9rem;line-height:1.6}
-.actions{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:24px}.btn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;font-weight:800;border-radius:999px;padding:12px 19px;border:1px solid #dfc8f7;color:#6941a0;background:#fff;transition:transform .15s,box-shadow .15s}.btn.primary{background:linear-gradient(100deg,#8b59cf,#c25fb4);color:white;border:0;box-shadow:0 8px 20px #9654bf35}.btn:hover{transform:translateY(-2px)}footer{text-align:center;padding:30px 10px 12px;color:#8a73a3;font-size:.9rem}footer a{color:#7747ae}
+.section-title{text-align:center;margin:34px 0 18px}.section-title h2{font-size:1.8rem;margin:10px 0}.section-title p{color:var(--muted);line-height:1.6}.faq-list{display:grid;gap:10px}.faq-item{background:#fff;border:1px solid var(--line);border-radius:15px;padding:15px 17px}.faq-item summary{cursor:pointer;font-weight:800;line-height:1.5}.faq-item p{color:var(--muted);line-height:1.7;margin:12px 0 0}.owner-card{margin-top:18px;background:linear-gradient(135deg,#fffaff,#fff0f8)}.owner-card h2{margin:0 0 9px}.owner-card p{color:var(--muted);line-height:1.7}.actions{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:24px}.btn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;font-weight:800;border-radius:999px;padding:12px 19px;border:1px solid #dfc8f7;color:#6941a0;background:#fff;transition:transform .15s,box-shadow .15s}.btn.primary{background:linear-gradient(100deg,#8b59cf,#c25fb4);color:white;border:0;box-shadow:0 8px 20px #9654bf35}.btn:hover{transform:translateY(-2px)}footer{text-align:center;padding:30px 10px 12px;color:#8a73a3;font-size:.9rem}footer a{color:#7747ae}
 @media(max-width:620px){main{padding:20px 14px}.grid{grid-template-columns:1fr}.chat-card{grid-column:auto}.card{padding:20px}.hero{padding:24px 4px}.top{margin-bottom:16px}}@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 </style>
 </head>
@@ -25,10 +25,32 @@ main{width:min(920px,100%);margin:auto;padding:36px 20px 24px}.top{display:flex;
 </header>
 <section class="hero">
 <div class="pill">💗 Your little help corner</div>
-<h1>Hiii! Welcome to<br><span>Clickrfun Support</span> 🐾</h1>
+<h1>Hiii! Welcome to<br><span>Clickrfun Help &amp; Support</span> 🐾</h1>
 <p>Something not working? Need help getting back into your account? Or have a cute idea to share? We're happy you're here. Open the live chat and tell us what's up!</p>
 <div class="actions"><a class="btn primary" href="#live-chat">💬 Chat with us</a><a class="btn" href="https://pup-love.github.io/Clickrfun/">🐾 Back to Clickrfun</a></div>
 </section>
+
+<section class="faq-section" id="faq">
+  <div class="section-title"><span class="eyebrow">🐾 QUICK ANSWERS</span><h2>Help &amp; Frequently Asked Questions</h2><p>Little answers to common Clickrfun questions.</p></div>
+  <div class="faq-list">
+    <details class="faq-item"><summary>What is Clickrfun?</summary><p>Clickrfun is a social corner of the internet with profiles, public chat rooms, private messages, virtual pets, badges, treats, a shop, and games.</p></details>
+    <details class="faq-item"><summary>How do I make an account?</summary><p>Visit Clickrfun and open Login, then choose the sign-up option and follow the prompts. If email confirmation is requested, check your inbox for the sign-up link.</p></details>
+    <details class="faq-item"><summary>How do I chat with other members?</summary><p>Sign in to Clickrfun and choose a public room, or use Private DMs to message another member when the feature is available to your account.</p></details>
+    <details class="faq-item"><summary>What are treats?</summary><p>Treats are virtual rewards used around Clickrfun. Check My Treats and the Shop to see what's available.</p></details>
+    <details class="faq-item"><summary>How do badges and stickers work?</summary><p>Explore Clickrfun and try the available activities to unlock collectibles. Your collection shows the badges and stickers you've earned.</p></details>
+    <details class="faq-item"><summary>How do virtual pets work?</summary><p>Visit My Virtual Puppy or My Virtual Kitty to meet and care for your companion. Check their needs and try the available pet actions.</p></details>
+    <details class="faq-item"><summary>Can I use Clickrfun on my phone?</summary><p>Clickrfun is designed to fit different screen sizes. If something looks odd, refresh the page or try an up-to-date browser.</p></details>
+    <details class="faq-item"><summary>How can I keep my account safe?</summary><p>Never share your password or private login codes with anyone, including support. Only enter login details on the official Clickrfun website.</p></details>
+    <details class="faq-item"><summary>Something isn't working. What should I do?</summary><p>Try refreshing Clickrfun. If the issue continues, note what you clicked and what happened, then use the live chat below to contact support—even if Clickrfun itself won't load.</p></details>
+  </div>
+</section>
+<section class="card owner-card" id="message-owner">
+  <div class="symbol">💌</div><h2>Message the Owner</h2>
+  <p>Have a question, found a bug, or have an idea? Use the live chat bubble in the bottom corner to send a private message to the Clickrfun team. You can leave a message when we're offline and we'll reply when we can.</p>
+  <div class="hint">🔒 Please don't share your password, verification codes, or other sensitive account details.</div>
+  <div class="actions"><a class="btn primary" href="#live-chat">💬 Open Support Chat</a></div>
+</section>
+
 <section class="grid" aria-label="Ways we can help">
 <article class="card"><div class="symbol">🛠️</div><h2>Something broken?</h2><p>Tell us what happened, what you clicked, and what you expected to happen. Screenshots are helpful if you can share them in chat.</p></article>
 <article class="card"><div class="symbol">🔐</div><h2>Account trouble?</h2><p>Can't log in or something looks wrong? Let us know. Please never send your password or private login codes.</p></article>
